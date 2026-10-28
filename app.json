@@ -19,7 +19,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "backgroundColor": "#f3f6ef"
+      "backgroundColor": "#f3f6ef",
+      "lang": "pt-BR"
     },
     "plugins": [
       [

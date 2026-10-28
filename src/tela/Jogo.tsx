@@ -171,22 +171,24 @@ export function Jogo() {
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <View style={[estilos.cabecalho, { paddingTop: insets.top + 12 }]}>
-        <Text accessibilityRole="header" style={estilos.titulo}>
-          Adivinhe Futebol
-        </Text>
-        {fase === 'fim' ? (
-          <Text style={estilos.placarTexto}>Rodada encerrada</Text>
-        ) : (
-          <View style={estilos.placar}>
-            <Text style={estilos.placarTexto} testID="placar-pergunta">
-              Pergunta {indice + 1}/{total}
-            </Text>
-            <Text style={estilos.placarTexto} testID="placar-pontos">
-              {textoPontos(pontos)}
-            </Text>
-          </View>
-        )}
-        {fase !== 'fim' ? <Text style={estilos.regra}>Menos dicas, mais pontos.</Text> : null}
+        <View style={estilos.cabecalhoMiolo}>
+          <Text accessibilityRole="header" style={estilos.titulo}>
+            Adivinhe Futebol
+          </Text>
+          {fase === 'fim' ? (
+            <Text style={estilos.placarTexto}>Rodada encerrada</Text>
+          ) : (
+            <View style={estilos.placar}>
+              <Text style={estilos.placarTexto} testID="placar-pergunta">
+                Pergunta {indice + 1}/{total}
+              </Text>
+              <Text style={estilos.placarTexto} testID="placar-pontos">
+                {textoPontos(pontos)}
+              </Text>
+            </View>
+          )}
+          {fase !== 'fim' ? <Text style={estilos.regra}>Menos dicas, mais pontos.</Text> : null}
+        </View>
       </View>
 
       <ScrollView
@@ -319,6 +321,11 @@ const estilos = StyleSheet.create({
     backgroundColor: CORES.verde,
     paddingHorizontal: 20,
     paddingBottom: 16,
+  },
+  cabecalhoMiolo: {
+    width: '100%',
+    maxWidth: 520,
+    alignSelf: 'center',
     gap: 6,
   },
   titulo: {
