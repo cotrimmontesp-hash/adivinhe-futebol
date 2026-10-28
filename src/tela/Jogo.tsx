@@ -16,6 +16,7 @@ import { itens } from '../dados';
 import { useCronometroPergunta } from '../jogo/cronometro';
 import { pontosDaPergunta } from '../jogo/pontos';
 import { normalizarResposta, respostaConfere } from '../jogo/resposta';
+import { SEQUENCIA_INICIAL, atualizarSequencia } from '../jogo/sequencia';
 import { TAMANHO_RODADA, sortearRodada } from '../jogo/sortear';
 import { lerRecorde, salvarRecorde } from '../recorde';
 import { CORES, textoBase } from '../tema';
@@ -53,6 +54,7 @@ export function Jogo() {
   const [respostaDigitada, setRespostaDigitada] = useState('');
   const [aviso, setAviso] = useState<string | null>(null);
   const [ganhos, setGanhos] = useState(0);
+  const [sequencia, setSequencia] = useState(SEQUENCIA_INICIAL);
   const [fase, setFase] = useState<Fase>('escolha');
   const [novoRecorde, setNovoRecorde] = useState(false);
   const faseRef = useRef<Fase>('escolha');
@@ -104,8 +106,10 @@ export function Jogo() {
     }
     if (!respostaConfere(respostaDigitada, pergunta.resposta, pergunta.aceitas)) {
       setAviso('Não é essa. Tente de novo.');
+      registrarSequencia(false);
       return;
     }
+    registrarSequencia(true);
     const pontosGanhos = pontosDaPergunta(dicasRef.current, true);
     setPontos((atual) => atual + pontosGanhos);
     setGanhos(pontosGanhos);
@@ -114,10 +118,15 @@ export function Jogo() {
     Keyboard.dismiss();
   }
 
+  function registrarSequencia(acertou: boolean) {
+    setSequencia((estado) => atualizarSequencia(estado.atual, estado.maior, acertou));
+  }
+
   function desistir() {
     if (faseRef.current !== 'jogando') {
       return;
     }
+    registrarSequencia(false);
     setGanhos(0);
     setAviso(null);
     mudarFase('revelada');
@@ -158,6 +167,7 @@ export function Jogo() {
     setAviso(null);
     setGanhos(0);
     setNovoRecorde(false);
+    setSequencia(SEQUENCIA_INICIAL);
   }
 
   function comecar(escolhido: Nivel) {
@@ -276,6 +286,9 @@ export function Jogo() {
             <Text style={estilos.fimRotulo}>Total da rodada</Text>
             <Text style={estilos.fimPontos}>{pontos}</Text>
             <Text style={estilos.fimUnidade}>{pontos === 1 ? 'ponto' : 'pontos'}</Text>
+            <Text style={estilos.recorde} testID="maior-sequencia">
+              Maior sequência: {sequencia.maior}
+            </Text>
             <Text style={estilos.recorde}>Recorde: {textoPontos(recorde)}</Text>
             {novoRecorde ? <Text style={estilos.novoRecorde}>Novo recorde!</Text> : null}
             <Botao rotulo="Jogar de novo" onPress={jogarDeNovo} variante="primario" testID="botao-jogar-de-novo" />
@@ -287,6 +300,9 @@ export function Jogo() {
               testID="cronometro"
             >
               Tempo: {restante}s
+            </Text>
+            <Text style={estilos.sequencia} testID="sequencia">
+              Sequência: {sequencia.atual}
             </Text>
             <Text style={estilos.tipo}>{rotuloTipo(pergunta.tipo)}</Text>
 
@@ -472,6 +488,11 @@ const estilos = StyleSheet.create({
   },
   tempoUrgente: {
     color: CORES.aviso,
+  },
+  sequencia: {
+    ...textoBase,
+    fontSize: 18,
+    fontWeight: '700',
   },
   tipo: {
     ...textoBase,
