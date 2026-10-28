@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Adivinhe Futebol",
+    "slug": "adivinhe-futebol",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "br.com.minanoideias.adivinhefutebol",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "br.com.minanoideias.adivinhefutebol",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#146c43"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "backgroundColor": "#f3f6ef"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#146c43",
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "imageWidth": 280
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
