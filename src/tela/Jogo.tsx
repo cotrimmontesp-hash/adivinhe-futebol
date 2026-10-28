@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { itens } from '../dados';
+import { useCronometroPergunta } from '../jogo/cronometro';
 import { pontosDaPergunta } from '../jogo/pontos';
 import { normalizarResposta, respostaConfere } from '../jogo/resposta';
 import { TAMANHO_RODADA, sortearRodada } from '../jogo/sortear';
@@ -80,6 +81,7 @@ export function Jogo() {
 
   const pergunta = rodada[indice];
   const total = rodada.length;
+  const restante = useCronometroPergunta(fase === 'jogando', pergunta?.id, desistir);
 
   function revelarMaisUmaDica() {
     if (faseRef.current !== 'jogando' || pergunta === undefined) {
@@ -280,6 +282,12 @@ export function Jogo() {
           </View>
         ) : (
           <View style={estilos.bloco}>
+            <Text
+              style={[estilos.tempo, restante <= 5 ? estilos.tempoUrgente : null]}
+              testID="cronometro"
+            >
+              Tempo: {restante}s
+            </Text>
             <Text style={estilos.tipo}>{rotuloTipo(pergunta.tipo)}</Text>
 
             {fase === 'revelada' ? (
@@ -456,6 +464,14 @@ const estilos = StyleSheet.create({
   },
   bloco: {
     gap: 14,
+  },
+  tempo: {
+    ...textoBase,
+    fontSize: 18,
+    fontWeight: '700',
+  },
+  tempoUrgente: {
+    color: CORES.aviso,
   },
   tipo: {
     ...textoBase,
