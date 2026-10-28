@@ -26,33 +26,55 @@ function embaralhar<T>(lista: readonly T[], aleatorio: () => number): T[] {
   return copia;
 }
 
-function comMistura<T extends ItemSorteavel>(
-  selecionados: readonly T[],
-  universo: readonly T[],
-): T[] {
-  const resultado = [...selecionados];
-  if (resultado.length < 2) {
-    return resultado;
+function gruposPorTipo<T extends ItemSorteavel>(itens: readonly T[]): T[][] {
+  const porTipo = new Map<string, T[]>();
+  for (const item of itens) {
+    const grupo = porTipo.get(item.tipo);
+    if (grupo === undefined) {
+      porTipo.set(item.tipo, [item]);
+    } else {
+      grupo.push(item);
+    }
   }
-  const tiposNoUniverso = new Set(universo.map((item) => item.tipo));
-  if (tiposNoUniverso.size < 2) {
-    return resultado;
-  }
-  const tiposSelecionados = new Set(resultado.map((item) => item.tipo));
-  if (tiposSelecionados.size >= 2) {
-    return resultado;
-  }
-  const tipoAtual = resultado[0]?.tipo;
-  const ids = new Set(resultado.map((item) => item.id));
-  const substituto = universo.find((item) => item.tipo !== tipoAtual && !ids.has(item.id));
-  const ultimo = resultado.length - 1;
-  if (substituto !== undefined && resultado[ultimo] !== undefined) {
-    resultado[ultimo] = substituto;
-  }
-  return resultado;
+  return [...porTipo.values()];
 }
 
-/** Sorteia uma rodada sem repetir id. Com os dois tipos no banco, a rodada mistura os dois. */
+/** Reparte a rodada o mais perto possível entre os tipos, sem passar do que cada um tem. */
+function cotasEquilibradas(tamanhos: readonly number[], quantidade: number, aleatorio: () => number): number[] {
+  const cotas = tamanhos.map(() => 0);
+  let restante = quantidade;
+  const base = Math.floor(quantidade / tamanhos.length);
+  for (let i = 0; i < tamanhos.length; i += 1) {
+    const cota = Math.min(base, tamanhos[i] ?? 0);
+    cotas[i] = cota;
+    restante -= cota;
+  }
+  const ordem = embaralhar(
+    tamanhos.map((_, indice) => indice),
+    aleatorio,
+  );
+  while (restante > 0) {
+    let avancou = false;
+    for (const indice of ordem) {
+      if (restante === 0) {
+        break;
+      }
+      const tamanho = tamanhos[indice] ?? 0;
+      const atual = cotas[indice] ?? 0;
+      if (atual < tamanho) {
+        cotas[indice] = atual + 1;
+        restante -= 1;
+        avancou = true;
+      }
+    }
+    if (!avancou) {
+      break;
+    }
+  }
+  return cotas;
+}
+
+/** Sorteia uma rodada sem repetir id. Com os dois tipos no banco, a rodada mistura e equilibra os dois. */
 export function sortearRodada<T extends ItemSorteavel>(
   itens: readonly T[],
   quantidade: number,
@@ -71,6 +93,20 @@ export function sortearRodada<T extends ItemSorteavel>(
     }
     ids.add(item.id);
   }
-  const embaralhados = embaralhar(itens, aleatorio);
-  return comMistura(embaralhados.slice(0, quantidade), embaralhados);
+
+  const grupos = gruposPorTipo(itens).map((grupo) => embaralhar(grupo, aleatorio));
+  if (grupos.length < 2) {
+    return embaralhar(itens, aleatorio).slice(0, quantidade);
+  }
+
+  const cotas = cotasEquilibradas(
+    grupos.map((grupo) => grupo.length),
+    quantidade,
+    aleatorio,
+  );
+  const selecionados: T[] = [];
+  grupos.forEach((grupo, indice) => {
+    selecionados.push(...grupo.slice(0, cotas[indice] ?? 0));
+  });
+  return embaralhar(selecionados, aleatorio);
 }

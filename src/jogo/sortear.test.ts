@@ -23,7 +23,7 @@ function semente(valor: number): () => number {
   };
 }
 
-test('sorteia 10 itens sem repetir e mistura jogadores e clubes', () => {
+test('sorteia 10 itens sem repetir e equilibra jogadores e clubes', () => {
   const itens = banco(15, 15);
   const ordem = itens.map((item) => item.id).join(',');
   for (let rodada = 0; rodada < 20; rodada += 1) {
@@ -34,8 +34,8 @@ test('sorteia 10 itens sem repetir e mistura jogadores e clubes', () => {
     for (const id of ids) {
       assert.ok(itens.some((item) => item.id === id));
     }
-    const tipos = new Set(sorteados.map((item) => item.tipo));
-    assert.equal(tipos.size, 2);
+    const jogadores = sorteados.filter((item) => item.tipo === 'jogador').length;
+    assert.equal(jogadores, 5);
   }
   assert.equal(itens.map((item) => item.id).join(','), ordem);
 });
@@ -46,6 +46,15 @@ test('corrige um sorteio que sairia só com um tipo', () => {
   assert.equal(sorteados.length, 2);
   assert.equal(new Set(sorteados.map((item) => item.id)).size, 2);
   assert.equal(new Set(sorteados.map((item) => item.tipo)).size, 2);
+});
+
+test('equilibra o quanto der quando um tipo tem menos itens', () => {
+  const itens = banco(2, 20);
+  const sorteados = sortearRodada(itens, 10, semente(3));
+  assert.equal(sorteados.length, 10);
+  assert.equal(new Set(sorteados.map((item) => item.id)).size, 10);
+  assert.equal(sorteados.filter((item) => item.tipo === 'jogador').length, 2);
+  assert.equal(sorteados.filter((item) => item.tipo === 'clube').length, 8);
 });
 
 test('recusa rodada maior que o banco', () => {

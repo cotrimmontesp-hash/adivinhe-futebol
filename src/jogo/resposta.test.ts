@@ -39,11 +39,11 @@ test('cada resposta e cada forma aceita do banco conferem', () => {
     aceitas: string[];
     dicas: string[];
   }[];
-  assert.equal(itens.length, 30);
-  assert.equal(itens.filter((item) => item.tipo === 'jogador').length, 15);
-  assert.equal(itens.filter((item) => item.tipo === 'clube').length, 15);
+  assert.equal(itens.length, 100);
+  assert.equal(itens.filter((item) => item.tipo === 'jogador').length, 50);
+  assert.equal(itens.filter((item) => item.tipo === 'clube').length, 50);
   const ids = new Set(itens.map((item) => item.id));
-  assert.equal(ids.size, 30);
+  assert.equal(ids.size, 100);
   for (const item of itens) {
     assert.equal(item.dicas.length, 5);
     assert.equal(respostaConfere(item.resposta, item.resposta, item.aceitas), true);

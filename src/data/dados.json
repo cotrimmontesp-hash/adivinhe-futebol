@@ -1,33 +1,1722 @@
 [
-{"id":"pele","tipo":"jogador","resposta":"Pelé","aceitas":["pele","edson arantes do nascimento","rei pele"],"dicas":["Nasceu em Três Corações, Minas Gerais.","Passou quase toda a carreira em um clube da Baixada Santista.","Venceu a Copa do Mundo de 1958 com 17 anos.","É o único jogador tricampeão mundial (1958, 1962 e 1970).","É conhecido como \"O Rei do Futebol\"."]},
-{"id":"maradona","tipo":"jogador","resposta":"Maradona","aceitas":["maradona","diego maradona","diego armando maradona"],"dicas":["Nasceu em 1960, na Grande Buenos Aires.","É ídolo máximo do Napoli, da Itália.","Jogou no Boca Juniors e no Barcelona.","Marcou o gol conhecido como \"La Mano de Dios\" contra a Inglaterra, em 1986.","Capitão da Argentina campeã do mundo em 1986."]},
-{"id":"messi","tipo":"jogador","resposta":"Messi","aceitas":["messi","lionel messi","leo messi"],"dicas":["Nasceu em Rosário, Argentina.","Começou nas categorias de base do Newell's Old Boys.","Jogou no Barcelona, no PSG e no Inter Miami.","Foi campeão do mundo em 2022, no Catar.","Argentino, camisa 10, conhecido como \"La Pulga\"."]},
-{"id":"cristiano-ronaldo","tipo":"jogador","resposta":"Cristiano Ronaldo","aceitas":["cristiano ronaldo","cr7","cristiano"],"dicas":["Nasceu no Funchal, na Ilha da Madeira.","Começou no Sporting, de Lisboa.","Jogou no Manchester United, no Real Madrid e na Juventus.","Foi campeão da Eurocopa de 2016 com sua seleção.","Português, conhecido pelas iniciais CR7."]},
-{"id":"ronaldo-fenomeno","tipo":"jogador","resposta":"Ronaldo Fenômeno","aceitas":["ronaldo fenomeno","ronaldo","ronaldo nazario","fenomeno","ronaldo luis nazario de lima"],"dicas":["Começou a carreira profissional no Cruzeiro.","Jogou no PSV, no Barcelona, na Inter de Milão, no Real Madrid e no Milan.","Encerrou a carreira no Corinthians.","Foi artilheiro da Copa de 2002, com 8 gols.","Brasileiro apelidado de \"Fenômeno\"."]},
-{"id":"neymar","tipo":"jogador","resposta":"Neymar","aceitas":["neymar","neymar jr","neymar junior","ney"],"dicas":["Nasceu em Mogi das Cruzes, São Paulo.","Foi revelado pelo Santos.","Jogou no Barcelona e no PSG.","Foi ouro olímpico no Rio de Janeiro, em 2016.","Brasileiro, camisa 10 da seleção."]},
-{"id":"romario","tipo":"jogador","resposta":"Romário","aceitas":["romario","romario de souza faria","baixinho"],"dicas":["Nasceu no Rio de Janeiro.","Jogou no Vasco, no PSV e no Barcelona.","É apelidado de \"Baixinho\".","Foi eleito o melhor jogador da Copa de 1994.","Atacante campeão do mundo com o Brasil em 1994."]},
-{"id":"zidane","tipo":"jogador","resposta":"Zidane","aceitas":["zidane","zinedine zidane","zizou"],"dicas":["Nasceu em Marselha, na França.","Jogou na Juventus e no Real Madrid.","Foi treinador do Real Madrid.","Fez dois gols de cabeça na final da Copa de 1998, contra o Brasil.","Foi expulso na final da Copa de 2006 após uma cabeçada em Materazzi."]},
-{"id":"ronaldinho","tipo":"jogador","resposta":"Ronaldinho Gaúcho","aceitas":["ronaldinho","ronaldinho gaucho","ronaldinho gaúcho","r10"],"dicas":["Nasceu em Porto Alegre.","Começou no Grêmio.","Jogou no PSG, no Barcelona e no Milan.","Venceu a Copa do Mundo de 2002 com o Brasil.","Foi eleito o melhor do mundo em 2005 e é famoso pelos dribles e pelo sorriso."]},
-{"id":"kaka","tipo":"jogador","resposta":"Kaká","aceitas":["kaka","ricardo kaka","ricardo izecson dos santos leite"],"dicas":["Nasceu no Distrito Federal.","Foi revelado pelo São Paulo.","Jogou no Milan e no Real Madrid.","Foi campeão do mundo com o Brasil em 2002.","Ganhou a Bola de Ouro em 2007."]},
-{"id":"zico","tipo":"jogador","resposta":"Zico","aceitas":["zico","arthur antunes coimbra","galinho","galinho de quintino"],"dicas":["Nasceu no bairro de Quintino, no Rio de Janeiro.","É apelidado de \"Galinho de Quintino\".","Jogou na Udinese, na Itália, e no Kashima Antlers, no Japão.","Foi campeão da Libertadores e do Mundial em 1981.","É o maior ídolo da história do Flamengo."]},
-{"id":"garrincha","tipo":"jogador","resposta":"Garrincha","aceitas":["garrincha","manuel francisco dos santos","mane garrincha","mane"],"dicas":["Nasceu em Pau Grande, no Rio de Janeiro.","Ídolo do Botafogo.","Era conhecido pelas pernas tortas e pelos dribles.","Foi campeão do mundo em 1958 e 1962.","Seu apelido é o nome de um pássaro e ele é chamado de \"Alegria do Povo\"."]},
-{"id":"mbappe","tipo":"jogador","resposta":"Mbappé","aceitas":["mbappe","kylian mbappe","kylian"],"dicas":["Nasceu em Paris, na França.","Começou no Monaco.","Jogou no PSG e no Real Madrid.","Foi campeão do mundo em 2018, com 19 anos.","Fez três gols na final da Copa de 2022, contra a Argentina."]},
-{"id":"lewandowski","tipo":"jogador","resposta":"Lewandowski","aceitas":["lewandowski","robert lewandowski","lewa"],"dicas":["Nasceu em Varsóvia, na Polônia.","Jogou no Borussia Dortmund.","Foi artilheiro do Bayern de Munique.","Jogou no Barcelona.","Atacante polonês, fez 41 gols na Bundesliga 2020/21."]},
-{"id":"cafu","tipo":"jogador","resposta":"Cafu","aceitas":["cafu","marcos evangelista de morais"],"dicas":["Nasceu em Itaquaquecetuba, São Paulo.","Jogou no São Paulo, no Palmeiras, na Roma e no Milan.","Foi lateral direito.","Disputou três finais seguidas de Copa do Mundo (1994, 1998 e 2002).","Foi o capitão do Brasil pentacampeão em 2002."]},
-
-{"id":"flamengo","tipo":"clube","resposta":"Flamengo","aceitas":["flamengo","clube de regatas do flamengo","mengao","mengão","cr flamengo"],"dicas":["Foi fundado em 1895, como clube de remo.","Fica no Rio de Janeiro.","Mascote é o urubu.","Venceu a Libertadores em 1981, 2019 e 2022.","Cores: vermelho e preto. Torcida chamada de Nação."]},
-{"id":"corinthians","tipo":"clube","resposta":"Corinthians","aceitas":["corinthians","sport club corinthians paulista","timao","timão"],"dicas":["Foi fundado em 1910, por operários, em São Paulo.","Seu estádio é a Neo Química Arena.","Foi campeão mundial de clubes em 2000 e em 2012.","Venceu a Libertadores em 2012.","Apelido: \"Timão\"."]},
-{"id":"palmeiras","tipo":"clube","resposta":"Palmeiras","aceitas":["palmeiras","sociedade esportiva palmeiras","verdao","verdão"],"dicas":["Foi fundado em 1914 com outro nome: Palestra Italia.","Seu estádio é o Allianz Parque.","Venceu a Libertadores em 1999, 2020 e 2021.","Tem sede em São Paulo.","Apelido: \"Verdão\"."]},
-{"id":"sao-paulo","tipo":"clube","resposta":"São Paulo","aceitas":["sao paulo","são paulo","sao paulo fc","spfc","tricolor paulista"],"dicas":["Foi fundado em 1930.","Seu estádio é o Morumbi.","Venceu a Libertadores em 1992, 1993 e 2005.","Venceu o Mundial de Clubes em 1992, 1993 e 2005.","Chamado de \"Tricolor\", com camisa branca, vermelha e preta."]},
-{"id":"santos","tipo":"clube","resposta":"Santos","aceitas":["santos","santos fc","santos futebol clube","peixe"],"dicas":["Foi fundado em 1912.","Seu estádio é a Vila Belmiro.","Foi campeão mundial de clubes em 1962 e 1963.","Revelou Pelé e Neymar.","Chamado de \"Peixe\", fica no litoral paulista."]},
-{"id":"vasco","tipo":"clube","resposta":"Vasco da Gama","aceitas":["vasco","vasco da gama","cr vasco da gama"],"dicas":["Foi fundado em 1898, como clube de remo.","Seu estádio é São Januário.","Venceu a Libertadores em 1998.","Tem uma cruz de malta no escudo.","Time carioca com camisa preta e faixa branca, apelidado de \"Gigante da Colina\"."]},
-{"id":"gremio","tipo":"clube","resposta":"Grêmio","aceitas":["gremio","grêmio","gremio fbpa","tricolor gaucho","tricolor gaúcho"],"dicas":["Foi fundado em 1903.","Seu estádio é a Arena do Grêmio.","Venceu a Libertadores em 1983, 1995 e 2017.","Foi campeão mundial em 1983.","Time de Porto Alegre, de camisa azul, preta e branca."]},
-{"id":"internacional","tipo":"clube","resposta":"Internacional","aceitas":["internacional","inter","sc internacional","colorado","inter de porto alegre"],"dicas":["Foi fundado em 1909.","Seu estádio é o Beira-Rio.","Venceu a Libertadores em 2006 e 2010.","Foi campeão mundial de clubes em 2006.","Time de Porto Alegre de camisa vermelha, chamado de \"Colorado\"."]},
-{"id":"real-madrid","tipo":"clube","resposta":"Real Madrid","aceitas":["real madrid","real","real madri","los blancos"],"dicas":["Foi fundado em 1902.","Seu estádio é o Santiago Bernabéu.","Joga de branco e é chamado de \"Los Blancos\".","É o maior campeão da Champions League.","Time da capital da Espanha."]},
-{"id":"barcelona","tipo":"clube","resposta":"Barcelona","aceitas":["barcelona","fc barcelona","barca","barça"],"dicas":["Foi fundado em 1899.","O lema do clube é \"Més que un club\".","Sua base de formação de jogadores se chama La Masia.","Seu estádio é o Camp Nou.","Time espanhol onde Messi virou ídolo."]},
-{"id":"manchester-united","tipo":"clube","resposta":"Manchester United","aceitas":["manchester united","man united","man utd","united","manchester"],"dicas":["Foi fundado em 1878, com o nome de Newton Heath.","Seu estádio, Old Trafford, é chamado de \"Teatro dos Sonhos\".","Tem apelido de \"Red Devils\".","Foi dirigido por muitos anos por Sir Alex Ferguson.","Time inglês de Manchester, de camisa vermelha."]},
-{"id":"boca-juniors","tipo":"clube","resposta":"Boca Juniors","aceitas":["boca juniors","boca","boca jrs"],"dicas":["Foi fundado em 1905, em um bairro portuário.","Seu estádio é La Bombonera.","Disputa o Superclásico contra o River Plate.","Maradona jogou nesse clube.","Time argentino de camisa azul com faixa amarela."]},
-{"id":"bayern","tipo":"clube","resposta":"Bayern de Munique","aceitas":["bayern","bayern de munique","bayern munich","bayern munchen","bayern de munchen"],"dicas":["Foi fundado em 1900.","Seu estádio é a Allianz Arena.","É o maior campeão do campeonato alemão.","Tem apelido de \"Die Roten\" (Os Vermelhos).","Time alemão da Baviera."]},
-{"id":"juventus","tipo":"clube","resposta":"Juventus","aceitas":["juventus","juve","velha senhora"],"dicas":["Foi fundado em 1897.","Fica na cidade de Turim.","Tem apelido de \"Velha Senhora\".","Cristiano Ronaldo e Zidane jogaram nesse clube.","Time italiano de camisa listrada em preto e branco."]},
-{"id":"liverpool","tipo":"clube","resposta":"Liverpool","aceitas":["liverpool","liverpool fc","reds"],"dicas":["Foi fundado em 1892.","Seu estádio é Anfield.","Sua torcida canta \"You'll Never Walk Alone\".","Tem apelido de \"The Reds\".","Time inglês de camisa vermelha, da cidade dos Beatles."]}
+ {
+  "id": "pele",
+  "tipo": "jogador",
+  "resposta": "Pelé",
+  "aceitas": [
+   "pele",
+   "edson arantes do nascimento",
+   "rei pele"
+  ],
+  "dicas": [
+   "Nasceu em Três Corações, Minas Gerais.",
+   "Passou quase toda a carreira em um clube da Baixada Santista.",
+   "Venceu a Copa do Mundo de 1958 com 17 anos.",
+   "É o único jogador tricampeão mundial (1958, 1962 e 1970).",
+   "É conhecido como \"O Rei do Futebol\"."
+  ]
+ },
+ {
+  "id": "maradona",
+  "tipo": "jogador",
+  "resposta": "Maradona",
+  "aceitas": [
+   "maradona",
+   "diego maradona",
+   "diego armando maradona"
+  ],
+  "dicas": [
+   "Nasceu em 1960, na Grande Buenos Aires.",
+   "É ídolo máximo do Napoli, da Itália.",
+   "Jogou no Boca Juniors e no Barcelona.",
+   "Marcou o gol conhecido como \"La Mano de Dios\" contra a Inglaterra, em 1986.",
+   "Capitão da Argentina campeã do mundo em 1986."
+  ]
+ },
+ {
+  "id": "messi",
+  "tipo": "jogador",
+  "resposta": "Messi",
+  "aceitas": [
+   "messi",
+   "lionel messi",
+   "leo messi"
+  ],
+  "dicas": [
+   "Nasceu em Rosário, Argentina.",
+   "Começou nas categorias de base do Newell's Old Boys.",
+   "Jogou no Barcelona, no PSG e no Inter Miami.",
+   "Foi campeão do mundo em 2022, no Catar.",
+   "Argentino, camisa 10, conhecido como \"La Pulga\"."
+  ]
+ },
+ {
+  "id": "cristiano-ronaldo",
+  "tipo": "jogador",
+  "resposta": "Cristiano Ronaldo",
+  "aceitas": [
+   "cristiano ronaldo",
+   "cr7",
+   "cristiano"
+  ],
+  "dicas": [
+   "Nasceu no Funchal, na Ilha da Madeira.",
+   "Começou no Sporting, de Lisboa.",
+   "Jogou no Manchester United, no Real Madrid e na Juventus.",
+   "Foi campeão da Eurocopa de 2016 com sua seleção.",
+   "Português, conhecido pelas iniciais CR7."
+  ]
+ },
+ {
+  "id": "ronaldo-fenomeno",
+  "tipo": "jogador",
+  "resposta": "Ronaldo Fenômeno",
+  "aceitas": [
+   "ronaldo fenomeno",
+   "ronaldo",
+   "ronaldo nazario",
+   "fenomeno",
+   "ronaldo luis nazario de lima"
+  ],
+  "dicas": [
+   "Começou a carreira profissional no Cruzeiro.",
+   "Jogou no PSV, no Barcelona, na Inter de Milão, no Real Madrid e no Milan.",
+   "Encerrou a carreira no Corinthians.",
+   "Foi artilheiro da Copa de 2002, com 8 gols.",
+   "Brasileiro apelidado de \"Fenômeno\"."
+  ]
+ },
+ {
+  "id": "neymar",
+  "tipo": "jogador",
+  "resposta": "Neymar",
+  "aceitas": [
+   "neymar",
+   "neymar jr",
+   "neymar junior",
+   "ney"
+  ],
+  "dicas": [
+   "Nasceu em Mogi das Cruzes, São Paulo.",
+   "Foi revelado pelo Santos.",
+   "Jogou no Barcelona e no PSG.",
+   "Foi ouro olímpico no Rio de Janeiro, em 2016.",
+   "Brasileiro, camisa 10 da seleção."
+  ]
+ },
+ {
+  "id": "romario",
+  "tipo": "jogador",
+  "resposta": "Romário",
+  "aceitas": [
+   "romario",
+   "romario de souza faria",
+   "baixinho"
+  ],
+  "dicas": [
+   "Nasceu no Rio de Janeiro.",
+   "Jogou no Vasco, no PSV e no Barcelona.",
+   "É apelidado de \"Baixinho\".",
+   "Foi eleito o melhor jogador da Copa de 1994.",
+   "Atacante campeão do mundo com o Brasil em 1994."
+  ]
+ },
+ {
+  "id": "zidane",
+  "tipo": "jogador",
+  "resposta": "Zidane",
+  "aceitas": [
+   "zidane",
+   "zinedine zidane",
+   "zizou"
+  ],
+  "dicas": [
+   "Nasceu em Marselha, na França.",
+   "Jogou na Juventus e no Real Madrid.",
+   "Foi treinador do Real Madrid.",
+   "Fez dois gols de cabeça na final da Copa de 1998, contra o Brasil.",
+   "Foi expulso na final da Copa de 2006 após uma cabeçada em Materazzi."
+  ]
+ },
+ {
+  "id": "ronaldinho",
+  "tipo": "jogador",
+  "resposta": "Ronaldinho Gaúcho",
+  "aceitas": [
+   "ronaldinho",
+   "ronaldinho gaucho",
+   "ronaldinho gaúcho",
+   "r10"
+  ],
+  "dicas": [
+   "Nasceu em Porto Alegre.",
+   "Começou no Grêmio.",
+   "Jogou no PSG, no Barcelona e no Milan.",
+   "Venceu a Copa do Mundo de 2002 com o Brasil.",
+   "Foi eleito o melhor do mundo em 2005 e é famoso pelos dribles e pelo sorriso."
+  ]
+ },
+ {
+  "id": "kaka",
+  "tipo": "jogador",
+  "resposta": "Kaká",
+  "aceitas": [
+   "kaka",
+   "ricardo kaka",
+   "ricardo izecson dos santos leite"
+  ],
+  "dicas": [
+   "Nasceu no Distrito Federal.",
+   "Foi revelado pelo São Paulo.",
+   "Jogou no Milan e no Real Madrid.",
+   "Foi campeão do mundo com o Brasil em 2002.",
+   "Ganhou a Bola de Ouro em 2007."
+  ]
+ },
+ {
+  "id": "zico",
+  "tipo": "jogador",
+  "resposta": "Zico",
+  "aceitas": [
+   "zico",
+   "arthur antunes coimbra",
+   "galinho",
+   "galinho de quintino"
+  ],
+  "dicas": [
+   "Nasceu no bairro de Quintino, no Rio de Janeiro.",
+   "É apelidado de \"Galinho de Quintino\".",
+   "Jogou na Udinese, na Itália, e no Kashima Antlers, no Japão.",
+   "Foi campeão da Libertadores e do Mundial em 1981.",
+   "É o maior ídolo da história do Flamengo."
+  ]
+ },
+ {
+  "id": "garrincha",
+  "tipo": "jogador",
+  "resposta": "Garrincha",
+  "aceitas": [
+   "garrincha",
+   "manuel francisco dos santos",
+   "mane garrincha",
+   "mane"
+  ],
+  "dicas": [
+   "Nasceu em Pau Grande, no Rio de Janeiro.",
+   "Ídolo do Botafogo.",
+   "Era conhecido pelas pernas tortas e pelos dribles.",
+   "Foi campeão do mundo em 1958 e 1962.",
+   "Seu apelido é o nome de um pássaro e ele é chamado de \"Alegria do Povo\"."
+  ]
+ },
+ {
+  "id": "mbappe",
+  "tipo": "jogador",
+  "resposta": "Mbappé",
+  "aceitas": [
+   "mbappe",
+   "kylian mbappe",
+   "kylian"
+  ],
+  "dicas": [
+   "Nasceu em Paris, na França.",
+   "Começou no Monaco.",
+   "Jogou no PSG e no Real Madrid.",
+   "Foi campeão do mundo em 2018, com 19 anos.",
+   "Fez três gols na final da Copa de 2022, contra a Argentina."
+  ]
+ },
+ {
+  "id": "lewandowski",
+  "tipo": "jogador",
+  "resposta": "Lewandowski",
+  "aceitas": [
+   "lewandowski",
+   "robert lewandowski",
+   "lewa"
+  ],
+  "dicas": [
+   "Nasceu em Varsóvia, na Polônia.",
+   "Jogou no Borussia Dortmund.",
+   "Foi artilheiro do Bayern de Munique.",
+   "Jogou no Barcelona.",
+   "Atacante polonês, fez 41 gols na Bundesliga 2020/21."
+  ]
+ },
+ {
+  "id": "cafu",
+  "tipo": "jogador",
+  "resposta": "Cafu",
+  "aceitas": [
+   "cafu",
+   "marcos evangelista de morais"
+  ],
+  "dicas": [
+   "Nasceu em Itaquaquecetuba, São Paulo.",
+   "Jogou no São Paulo, no Palmeiras, na Roma e no Milan.",
+   "Foi lateral direito.",
+   "Disputou três finais seguidas de Copa do Mundo (1994, 1998 e 2002).",
+   "Foi o capitão do Brasil pentacampeão em 2002."
+  ]
+ },
+ {
+  "id": "flamengo",
+  "tipo": "clube",
+  "resposta": "Flamengo",
+  "aceitas": [
+   "flamengo",
+   "clube de regatas do flamengo",
+   "mengao",
+   "mengão",
+   "cr flamengo"
+  ],
+  "dicas": [
+   "Foi fundado em 1895, como clube de remo.",
+   "Fica no Rio de Janeiro.",
+   "Mascote é o urubu.",
+   "Venceu a Libertadores em 1981, 2019 e 2022.",
+   "Cores: vermelho e preto. Torcida chamada de Nação."
+  ]
+ },
+ {
+  "id": "corinthians",
+  "tipo": "clube",
+  "resposta": "Corinthians",
+  "aceitas": [
+   "corinthians",
+   "sport club corinthians paulista",
+   "timao",
+   "timão"
+  ],
+  "dicas": [
+   "Foi fundado em 1910, por operários, em São Paulo.",
+   "Seu estádio é a Neo Química Arena.",
+   "Foi campeão mundial de clubes em 2000 e em 2012.",
+   "Venceu a Libertadores em 2012.",
+   "Apelido: \"Timão\"."
+  ]
+ },
+ {
+  "id": "palmeiras",
+  "tipo": "clube",
+  "resposta": "Palmeiras",
+  "aceitas": [
+   "palmeiras",
+   "sociedade esportiva palmeiras",
+   "verdao",
+   "verdão"
+  ],
+  "dicas": [
+   "Foi fundado em 1914 com outro nome: Palestra Italia.",
+   "Seu estádio é o Allianz Parque.",
+   "Venceu a Libertadores em 1999, 2020 e 2021.",
+   "Tem sede em São Paulo.",
+   "Apelido: \"Verdão\"."
+  ]
+ },
+ {
+  "id": "sao-paulo",
+  "tipo": "clube",
+  "resposta": "São Paulo",
+  "aceitas": [
+   "sao paulo",
+   "são paulo",
+   "sao paulo fc",
+   "spfc",
+   "tricolor paulista"
+  ],
+  "dicas": [
+   "Foi fundado em 1930.",
+   "Seu estádio é o Morumbi.",
+   "Venceu a Libertadores em 1992, 1993 e 2005.",
+   "Venceu o Mundial de Clubes em 1992, 1993 e 2005.",
+   "Chamado de \"Tricolor\", com camisa branca, vermelha e preta."
+  ]
+ },
+ {
+  "id": "santos",
+  "tipo": "clube",
+  "resposta": "Santos",
+  "aceitas": [
+   "santos",
+   "santos fc",
+   "santos futebol clube",
+   "peixe"
+  ],
+  "dicas": [
+   "Foi fundado em 1912.",
+   "Seu estádio é a Vila Belmiro.",
+   "Foi campeão mundial de clubes em 1962 e 1963.",
+   "Revelou Pelé e Neymar.",
+   "Chamado de \"Peixe\", fica no litoral paulista."
+  ]
+ },
+ {
+  "id": "vasco",
+  "tipo": "clube",
+  "resposta": "Vasco da Gama",
+  "aceitas": [
+   "vasco",
+   "vasco da gama",
+   "cr vasco da gama"
+  ],
+  "dicas": [
+   "Foi fundado em 1898, como clube de remo.",
+   "Seu estádio é São Januário.",
+   "Venceu a Libertadores em 1998.",
+   "Tem uma cruz de malta no escudo.",
+   "Time carioca com camisa preta e faixa branca, apelidado de \"Gigante da Colina\"."
+  ]
+ },
+ {
+  "id": "gremio",
+  "tipo": "clube",
+  "resposta": "Grêmio",
+  "aceitas": [
+   "gremio",
+   "grêmio",
+   "gremio fbpa",
+   "tricolor gaucho",
+   "tricolor gaúcho"
+  ],
+  "dicas": [
+   "Foi fundado em 1903.",
+   "Seu estádio é uma arena moderna, inaugurada em 2012.",
+   "Venceu a Libertadores em 1983, 1995 e 2017.",
+   "Foi campeão mundial em 1983.",
+   "Time de Porto Alegre, de camisa azul, preta e branca."
+  ]
+ },
+ {
+  "id": "internacional",
+  "tipo": "clube",
+  "resposta": "Internacional",
+  "aceitas": [
+   "internacional",
+   "inter",
+   "sc internacional",
+   "colorado",
+   "inter de porto alegre"
+  ],
+  "dicas": [
+   "Foi fundado em 1909.",
+   "Seu estádio é o Beira-Rio.",
+   "Venceu a Libertadores em 2006 e 2010.",
+   "Foi campeão mundial de clubes em 2006.",
+   "Time de Porto Alegre de camisa vermelha, chamado de \"Colorado\"."
+  ]
+ },
+ {
+  "id": "real-madrid",
+  "tipo": "clube",
+  "resposta": "Real Madrid",
+  "aceitas": [
+   "real madrid",
+   "real",
+   "real madri",
+   "los blancos"
+  ],
+  "dicas": [
+   "Foi fundado em 1902.",
+   "Seu estádio é o Santiago Bernabéu.",
+   "Joga de branco e é chamado de \"Los Blancos\".",
+   "É o maior campeão da Champions League.",
+   "Time da capital da Espanha."
+  ]
+ },
+ {
+  "id": "barcelona",
+  "tipo": "clube",
+  "resposta": "Barcelona",
+  "aceitas": [
+   "barcelona",
+   "fc barcelona",
+   "barca",
+   "barça"
+  ],
+  "dicas": [
+   "Foi fundado em 1899.",
+   "O lema do clube é \"Més que un club\".",
+   "Sua base de formação de jogadores se chama La Masia.",
+   "Seu estádio é o Camp Nou.",
+   "Time espanhol onde Messi virou ídolo."
+  ]
+ },
+ {
+  "id": "manchester-united",
+  "tipo": "clube",
+  "resposta": "Manchester United",
+  "aceitas": [
+   "manchester united",
+   "man united",
+   "man utd",
+   "united",
+   "manchester"
+  ],
+  "dicas": [
+   "Foi fundado em 1878, com o nome de Newton Heath.",
+   "Seu estádio, Old Trafford, é chamado de \"Teatro dos Sonhos\".",
+   "Tem apelido de \"Red Devils\".",
+   "Foi dirigido por muitos anos por Sir Alex Ferguson.",
+   "Time inglês de Manchester, de camisa vermelha."
+  ]
+ },
+ {
+  "id": "boca-juniors",
+  "tipo": "clube",
+  "resposta": "Boca Juniors",
+  "aceitas": [
+   "boca juniors",
+   "boca",
+   "boca jrs"
+  ],
+  "dicas": [
+   "Foi fundado em 1905, em um bairro portuário.",
+   "Seu estádio é La Bombonera.",
+   "Disputa o Superclásico contra o River Plate.",
+   "Maradona jogou nesse clube.",
+   "Time argentino de camisa azul com faixa amarela."
+  ]
+ },
+ {
+  "id": "bayern",
+  "tipo": "clube",
+  "resposta": "Bayern de Munique",
+  "aceitas": [
+   "bayern",
+   "bayern de munique",
+   "bayern munich",
+   "bayern munchen",
+   "bayern de munchen"
+  ],
+  "dicas": [
+   "Foi fundado em 1900.",
+   "Seu estádio é a Allianz Arena.",
+   "É o maior campeão do campeonato alemão.",
+   "Tem apelido de \"Die Roten\" (Os Vermelhos).",
+   "Time alemão da Baviera."
+  ]
+ },
+ {
+  "id": "juventus",
+  "tipo": "clube",
+  "resposta": "Juventus",
+  "aceitas": [
+   "juventus",
+   "juve",
+   "velha senhora"
+  ],
+  "dicas": [
+   "Foi fundado em 1897.",
+   "Fica na cidade de Turim.",
+   "Tem apelido de \"Velha Senhora\".",
+   "Cristiano Ronaldo e Zidane jogaram nesse clube.",
+   "Time italiano de camisa listrada em preto e branco."
+  ]
+ },
+ {
+  "id": "liverpool",
+  "tipo": "clube",
+  "resposta": "Liverpool",
+  "aceitas": [
+   "liverpool",
+   "liverpool fc",
+   "reds"
+  ],
+  "dicas": [
+   "Foi fundado em 1892.",
+   "Seu estádio é Anfield.",
+   "Sua torcida canta \"You'll Never Walk Alone\".",
+   "Tem apelido de \"The Reds\".",
+   "Time inglês de camisa vermelha, da cidade dos Beatles."
+  ]
+ },
+ {
+  "id": "socrates",
+  "tipo": "jogador",
+  "resposta": "Sócrates",
+  "aceitas": [
+   "socrates",
+   "doutor socrates",
+   "socrates brasileiro"
+  ],
+  "dicas": [
+   "Nasceu em Belém, no Pará.",
+   "Formou-se em medicina.",
+   "Jogou na Fiorentina, da Itália.",
+   "Foi capitão do Brasil na Copa de 1982.",
+   "Ídolo do Corinthians, apelidado de \"Doutor\", símbolo da Democracia Corintiana."
+  ]
+ },
+ {
+  "id": "bebeto",
+  "tipo": "jogador",
+  "resposta": "Bebeto",
+  "aceitas": [
+   "bebeto",
+   "jose roberto gama de oliveira"
+  ],
+  "dicas": [
+   "Nasceu em Salvador, na Bahia.",
+   "Jogou no Vitória, no Flamengo e no Vasco.",
+   "Jogou no Deportivo La Coruña, da Espanha.",
+   "Foi campeão do mundo em 1994, ao lado de Romário.",
+   "Comemorou um gol na Copa de 1994 embalando um bebê nos braços."
+  ]
+ },
+ {
+  "id": "rivaldo",
+  "tipo": "jogador",
+  "resposta": "Rivaldo",
+  "aceitas": [
+   "rivaldo",
+   "rivaldo vitor borba ferreira"
+  ],
+  "dicas": [
+   "Nasceu em Paulista, em Pernambuco.",
+   "Jogou no Palmeiras, no Barcelona e no Milan.",
+   "Foi campeão do mundo em 2002.",
+   "Ganhou a Bola de Ouro em 1999.",
+   "Meia-atacante canhoto, famoso por um gol de bicicleta pelo Barcelona em 2001."
+  ]
+ },
+ {
+  "id": "roberto-carlos",
+  "tipo": "jogador",
+  "resposta": "Roberto Carlos",
+  "aceitas": [
+   "roberto carlos",
+   "roberto carlos da silva rocha"
+  ],
+  "dicas": [
+   "Nasceu em Garça, no interior de São Paulo.",
+   "Jogou no Palmeiras, na Inter de Milão e no Fenerbahçe.",
+   "Jogou no Corinthians e no Real Madrid.",
+   "Marcou um gol de falta com efeito impressionante contra a França, em 1997.",
+   "Lateral esquerdo campeão do mundo em 2002, famoso pelo chute fortíssimo."
+  ]
+ },
+ {
+  "id": "taffarel",
+  "tipo": "jogador",
+  "resposta": "Taffarel",
+  "aceitas": [
+   "taffarel",
+   "claudio taffarel"
+  ],
+  "dicas": [
+   "Nasceu em Santa Rosa, no Rio Grande do Sul.",
+   "Jogou no Internacional, no Parma e no Atlético Mineiro.",
+   "Jogou no Galatasaray, da Turquia.",
+   "Defendeu um pênalti na decisão da final da Copa de 1994, contra a Itália.",
+   "Goleiro campeão do mundo em 1994 e 2002 (este como reserva)."
+  ]
+ },
+ {
+  "id": "dunga",
+  "tipo": "jogador",
+  "resposta": "Dunga",
+  "aceitas": [
+   "dunga",
+   "carlos caetano bledorn verri"
+  ],
+  "dicas": [
+   "Nasceu em Ijuí, no Rio Grande do Sul.",
+   "Jogou no Internacional, na Fiorentina e no Stuttgart.",
+   "Jogou no Japão, no Júbilo Iwata.",
+   "Foi técnico do Brasil na Copa de 2010.",
+   "Capitão do Brasil tetracampeão do mundo, em 1994."
+  ]
+ },
+ {
+  "id": "jairzinho",
+  "tipo": "jogador",
+  "resposta": "Jairzinho",
+  "aceitas": [
+   "jairzinho",
+   "jair ventura filho",
+   "furacao da copa"
+  ],
+  "dicas": [
+   "Nasceu no Rio de Janeiro.",
+   "Ídolo do Botafogo.",
+   "Era chamado de \"Furacão da Copa\".",
+   "Marcou em todos os jogos do Brasil na Copa de 1970.",
+   "Atacante campeão do mundo em 1970, ao lado de Pelé."
+  ]
+ },
+ {
+  "id": "rivellino",
+  "tipo": "jogador",
+  "resposta": "Rivellino",
+  "aceitas": [
+   "rivellino",
+   "rivelino",
+   "roberto rivellino"
+  ],
+  "dicas": [
+   "Nasceu na cidade de São Paulo.",
+   "Jogou no Corinthians e no Fluminense.",
+   "Era conhecido pelo bigode e pelo chute de perna esquerda.",
+   "Foi campeão do mundo em 1970.",
+   "Meia canhoto, camisa 10 do Brasil, criador do drible chamado \"elástico\"."
+  ]
+ },
+ {
+  "id": "falcao",
+  "tipo": "jogador",
+  "resposta": "Falcão",
+  "aceitas": [
+   "falcao",
+   "paulo roberto falcao"
+  ],
+  "dicas": [
+   "Nasceu em Abelardo Luz, em Santa Catarina.",
+   "Foi revelado pelo Internacional e é um dos maiores ídolos do clube.",
+   "Jogou na Roma, onde foi chamado de \"Rei de Roma\".",
+   "Foi um dos craques do Brasil na Copa de 1982.",
+   "Meio-campista elegante e ídolo do futebol brasileiro."
+  ]
+ },
+ {
+  "id": "carlos-alberto-torres",
+  "tipo": "jogador",
+  "resposta": "Carlos Alberto Torres",
+  "aceitas": [
+   "carlos alberto torres",
+   "carlos alberto",
+   "capita"
+  ],
+  "dicas": [
+   "Nasceu no Rio de Janeiro.",
+   "Jogou no Santos, no Flamengo e no Fluminense.",
+   "Jogou no New York Cosmos, nos Estados Unidos.",
+   "Foi lateral direito.",
+   "Capitão do Brasil tricampeão em 1970 e autor do gol final na vitória por 4 a 1 sobre a Itália."
+  ]
+ },
+ {
+  "id": "rogerio-ceni",
+  "tipo": "jogador",
+  "resposta": "Rogério Ceni",
+  "aceitas": [
+   "rogerio ceni",
+   "ceni"
+  ],
+  "dicas": [
+   "Nasceu em Pato Branco, no Paraná.",
+   "Foi goleiro durante a maior parte da carreira no São Paulo.",
+   "Foi técnico de clubes como Fortaleza e Flamengo.",
+   "Venceu a Libertadores e o Mundial de Clubes de 2005 com o São Paulo.",
+   "Goleiro que fez mais de 100 gols na carreira, cobrando faltas e pênaltis."
+  ]
+ },
+ {
+  "id": "marta",
+  "tipo": "jogador",
+  "resposta": "Marta",
+  "aceitas": [
+   "marta",
+   "marta vieira da silva"
+  ],
+  "dicas": [
+   "Nasceu em Dois Riachos, em Alagoas.",
+   "Começou a carreira profissional no Vasco.",
+   "Jogou no Orlando Pride, nos Estados Unidos.",
+   "Foi eleita seis vezes a melhor jogadora do mundo pela Fifa.",
+   "Atacante camisa 10 da seleção brasileira feminina."
+  ]
+ },
+ {
+  "id": "zlatan",
+  "tipo": "jogador",
+  "resposta": "Zlatan Ibrahimović",
+  "aceitas": [
+   "zlatan",
+   "zlatan ibrahimovic",
+   "ibrahimovic",
+   "ibra"
+  ],
+  "dicas": [
+   "Nasceu em Malmö, na Suécia.",
+   "Jogou no Ajax, na Juventus e no Barcelona.",
+   "Jogou no Milan, no PSG e no Manchester United.",
+   "Fez um golaço de bicicleta contra a Inglaterra, em 2012.",
+   "Atacante sueco, alto e extrovertido, que encerrou a carreira no Milan."
+  ]
+ },
+ {
+  "id": "cruyff",
+  "tipo": "jogador",
+  "resposta": "Johan Cruyff",
+  "aceitas": [
+   "johan cruyff",
+   "cruyff",
+   "cruijff",
+   "johan cruijff"
+  ],
+  "dicas": [
+   "Nasceu em Amsterdã, na Holanda.",
+   "Jogou no Ajax e no Barcelona.",
+   "Usava a camisa 14.",
+   "Liderou a Holanda vice-campeã do mundo em 1974.",
+   "Deu nome a uma famosa finta, a \"virada\", feita na Copa de 1974."
+  ]
+ },
+ {
+  "id": "beckenbauer",
+  "tipo": "jogador",
+  "resposta": "Beckenbauer",
+  "aceitas": [
+   "beckenbauer",
+   "franz beckenbauer",
+   "kaiser"
+  ],
+  "dicas": [
+   "Nasceu em Munique, na Alemanha.",
+   "Jogou no New York Cosmos, nos Estados Unidos.",
+   "Atuava como líbero, saindo jogando da defesa.",
+   "Foi campeão do mundo como jogador (1974) e como técnico (1990).",
+   "Era chamado de \"Kaiser\" e foi ídolo do Bayern de Munique."
+  ]
+ },
+ {
+  "id": "gerd-muller",
+  "tipo": "jogador",
+  "resposta": "Gerd Müller",
+  "aceitas": [
+   "gerd muller",
+   "gerd mueller",
+   "muller",
+   "der bomber"
+  ],
+  "dicas": [
+   "Nasceu em Nördlingen, na Alemanha.",
+   "Era chamado de \"Der Bomber\".",
+   "Passou a maior parte da carreira no Bayern de Munique.",
+   "Marcou 14 gols em Copas do Mundo, 10 na de 1970 e 4 na de 1974.",
+   "Atacante alemão campeão do mundo em 1974."
+  ]
+ },
+ {
+  "id": "platini",
+  "tipo": "jogador",
+  "resposta": "Platini",
+  "aceitas": [
+   "platini",
+   "michel platini"
+  ],
+  "dicas": [
+   "Nasceu em Joeuf, na França.",
+   "Jogou no Nancy e no Saint-Étienne.",
+   "Jogou na Juventus.",
+   "Ganhou a Bola de Ouro três vezes seguidas, de 1983 a 1985.",
+   "Liderou a França campeã da Eurocopa de 1984 e depois presidiu a Uefa."
+  ]
+ },
+ {
+  "id": "maldini",
+  "tipo": "jogador",
+  "resposta": "Paolo Maldini",
+  "aceitas": [
+   "maldini",
+   "paolo maldini"
+  ],
+  "dicas": [
+   "Nasceu em Milão, na Itália.",
+   "Usava a camisa 3.",
+   "Jogou em toda a carreira em um só clube.",
+   "Seu pai, Cesare, também foi capitão desse mesmo clube.",
+   "Zagueiro e lateral italiano, símbolo e capitão do Milan."
+  ]
+ },
+ {
+  "id": "baggio",
+  "tipo": "jogador",
+  "resposta": "Roberto Baggio",
+  "aceitas": [
+   "baggio",
+   "roberto baggio",
+   "divin codino"
+  ],
+  "dicas": [
+   "Nasceu em Caldogno, na Itália.",
+   "Jogou na Fiorentina, na Juventus e no Milan.",
+   "Ganhou a Bola de Ouro de 1993.",
+   "Era conhecido pelo rabo de cavalo e apelidado de \"Divin Codino\".",
+   "Perdeu o pênalti decisivo na final da Copa de 1994, contra o Brasil."
+  ]
+ },
+ {
+  "id": "buffon",
+  "tipo": "jogador",
+  "resposta": "Buffon",
+  "aceitas": [
+   "buffon",
+   "gianluigi buffon",
+   "gigi buffon"
+  ],
+  "dicas": [
+   "Nasceu em Carrara, na Itália.",
+   "Começou no Parma.",
+   "Jogou no PSG por uma temporada.",
+   "Foi campeão do mundo em 2006.",
+   "Goleiro italiano, ídolo da Juventus e capitão por muitos anos."
+  ]
+ },
+ {
+  "id": "iniesta",
+  "tipo": "jogador",
+  "resposta": "Iniesta",
+  "aceitas": [
+   "iniesta",
+   "andres iniesta"
+  ],
+  "dicas": [
+   "Nasceu em Fuentealbilla, na Espanha.",
+   "Jogou no Vissel Kobe, no Japão.",
+   "Foi revelado na La Masia, a base do Barcelona.",
+   "Marcou o gol do título da Espanha na final da Copa de 2010.",
+   "Meia espanhol, ídolo do Barcelona e parceiro de Xavi e Messi."
+  ]
+ },
+ {
+  "id": "xavi",
+  "tipo": "jogador",
+  "resposta": "Xavi",
+  "aceitas": [
+   "xavi",
+   "xavi hernandez"
+  ],
+  "dicas": [
+   "Nasceu em Terrassa, na Espanha.",
+   "Jogou no Al Sadd, no Catar.",
+   "Foi técnico do Barcelona.",
+   "Foi campeão do mundo em 2010 e da Eurocopa em 2008 e 2012.",
+   "Meia espanhol, ídolo do Barcelona e parceiro de Iniesta."
+  ]
+ },
+ {
+  "id": "sergio-ramos",
+  "tipo": "jogador",
+  "resposta": "Sergio Ramos",
+  "aceitas": [
+   "sergio ramos",
+   "ramos"
+  ],
+  "dicas": [
+   "Nasceu em Camas, na Espanha.",
+   "Foi revelado pelo Sevilla.",
+   "Jogou no PSG.",
+   "Marcou de cabeça aos 93 minutos na final da Champions League de 2014.",
+   "Zagueiro e capitão do Real Madrid, campeão do mundo com a Espanha em 2010."
+  ]
+ },
+ {
+  "id": "thierry-henry",
+  "tipo": "jogador",
+  "resposta": "Thierry Henry",
+  "aceitas": [
+   "thierry henry",
+   "henry"
+  ],
+  "dicas": [
+   "Nasceu em Les Ulis, na França.",
+   "Começou no Monaco.",
+   "Jogou na Juventus e no Barcelona.",
+   "Foi campeão do mundo em 1998.",
+   "Atacante francês, maior artilheiro da história do Arsenal."
+  ]
+ },
+ {
+  "id": "cantona",
+  "tipo": "jogador",
+  "resposta": "Eric Cantona",
+  "aceitas": [
+   "eric cantona",
+   "cantona"
+  ],
+  "dicas": [
+   "Nasceu em Marselha, na França.",
+   "Jogou no Auxerre e no Olympique de Marselha.",
+   "Usava a camisa 7 e levantava a gola da camisa.",
+   "Deu um chute de kung-fu em um torcedor, em 1995.",
+   "Atacante francês, ídolo do Manchester United nos anos 1990."
+  ]
+ },
+ {
+  "id": "beckham",
+  "tipo": "jogador",
+  "resposta": "David Beckham",
+  "aceitas": [
+   "david beckham",
+   "beckham"
+  ],
+  "dicas": [
+   "Nasceu em Londres, na Inglaterra.",
+   "Jogou no Manchester United, no Real Madrid e no PSG.",
+   "Jogou no LA Galaxy e no Milan.",
+   "Marcou uma falta nos acréscimos contra a Grécia, em 2001, e classificou a Inglaterra para a Copa.",
+   "Meia inglês famoso pelos cruzamentos e casado com Victoria, das Spice Girls."
+  ]
+ },
+ {
+  "id": "gerrard",
+  "tipo": "jogador",
+  "resposta": "Steven Gerrard",
+  "aceitas": [
+   "steven gerrard",
+   "gerrard"
+  ],
+  "dicas": [
+   "Nasceu em Whiston, na Inglaterra.",
+   "Jogou no LA Galaxy e foi técnico do Rangers.",
+   "Foi capitão do seu clube por muitos anos.",
+   "Liderou a virada na final da Champions League de 2005, em Istambul.",
+   "Meia inglês, maior ídolo do Liverpool."
+  ]
+ },
+ {
+  "id": "suarez",
+  "tipo": "jogador",
+  "resposta": "Luis Suárez",
+  "aceitas": [
+   "luis suarez",
+   "suarez"
+  ],
+  "dicas": [
+   "Nasceu em Salto, no Uruguai.",
+   "Começou no Nacional, de Montevidéu.",
+   "Jogou no Ajax, no Liverpool e no Barcelona.",
+   "Jogou no Atlético de Madrid.",
+   "Atacante uruguaio que mordeu o zagueiro Chiellini na Copa de 2014."
+  ]
+ },
+ {
+  "id": "yashin",
+  "tipo": "jogador",
+  "resposta": "Lev Yashin",
+  "aceitas": [
+   "lev yashin",
+   "yashin",
+   "iachine",
+   "lev iachine"
+  ],
+  "dicas": [
+   "Nasceu em Moscou, na União Soviética.",
+   "Jogou toda a carreira no Dínamo de Moscou.",
+   "Era chamado de \"Aranha Negra\".",
+   "Usava um uniforme todo preto.",
+   "É o único goleiro que ganhou a Bola de Ouro, em 1963."
+  ]
+ },
+ {
+  "id": "puskas",
+  "tipo": "jogador",
+  "resposta": "Ferenc Puskás",
+  "aceitas": [
+   "puskas",
+   "ferenc puskas"
+  ],
+  "dicas": [
+   "Nasceu em Budapeste, na Hungria.",
+   "Jogou no Honvéd.",
+   "Jogou no Real Madrid.",
+   "Foi vice-campeão do mundo com a Hungria, em 1954.",
+   "O prêmio da Fifa para o gol mais bonito do ano leva o nome dele."
+  ]
+ },
+ {
+  "id": "di-stefano",
+  "tipo": "jogador",
+  "resposta": "Alfredo Di Stéfano",
+  "aceitas": [
+   "di stefano",
+   "alfredo di stefano",
+   "di stéfano"
+  ],
+  "dicas": [
+   "Nasceu em Buenos Aires, na Argentina.",
+   "Jogou no River Plate e no Millonarios, da Colômbia.",
+   "Era chamado de \"Saeta Rubia\".",
+   "Foi naturalizado espanhol.",
+   "Foi o astro do Real Madrid campeão europeu cinco vezes seguidas, de 1956 a 1960."
+  ]
+ },
+ {
+  "id": "haaland",
+  "tipo": "jogador",
+  "resposta": "Erling Haaland",
+  "aceitas": [
+   "erling haaland",
+   "haaland"
+  ],
+  "dicas": [
+   "Nasceu em Leeds, na Inglaterra.",
+   "Começou a carreira profissional no Bryne, na Noruega.",
+   "Jogou no Red Bull Salzburg e no Borussia Dortmund.",
+   "Seu pai, Alf-Inge, também foi jogador profissional.",
+   "Atacante norueguês, grande artilheiro do Manchester City."
+  ]
+ },
+ {
+  "id": "vinicius-junior",
+  "tipo": "jogador",
+  "resposta": "Vinícius Júnior",
+  "aceitas": [
+   "vinicius junior",
+   "vinicius jr",
+   "vini jr",
+   "vinicius",
+   "vini"
+  ],
+  "dicas": [
+   "Nasceu em São Gonçalo, no Rio de Janeiro.",
+   "Foi revelado pelo Flamengo.",
+   "Foi vendido ainda adolescente a um clube espanhol.",
+   "Marcou o gol do título do Real Madrid na final da Champions League de 2022, contra o Liverpool.",
+   "Ponta esquerda brasileiro do Real Madrid, conhecido como Vini Jr."
+  ]
+ },
+ {
+  "id": "modric",
+  "tipo": "jogador",
+  "resposta": "Luka Modrić",
+  "aceitas": [
+   "luka modric",
+   "modric"
+  ],
+  "dicas": [
+   "Nasceu perto de Zadar, na Croácia.",
+   "Começou no Dinamo Zagreb.",
+   "Jogou no Tottenham.",
+   "Levou a Croácia ao vice-campeonato mundial de 2018.",
+   "Meia croata, ganhou a Bola de Ouro de 2018 jogando no Real Madrid."
+  ]
+ },
+ {
+  "id": "salah",
+  "tipo": "jogador",
+  "resposta": "Mohamed Salah",
+  "aceitas": [
+   "mohamed salah",
+   "salah",
+   "mo salah"
+  ],
+  "dicas": [
+   "Nasceu em Nagrig, no Egito.",
+   "Jogou no Chelsea, na Fiorentina e na Roma.",
+   "Jogou na seleção do Egito, seu país.",
+   "É chamado de \"Faraó Egípcio\".",
+   "Atacante egípcio, grande artilheiro do Liverpool."
+  ]
+ },
+ {
+  "id": "atletico-mg",
+  "tipo": "clube",
+  "resposta": "Atlético Mineiro",
+  "aceitas": [
+   "atletico mineiro",
+   "atletico mg",
+   "galo",
+   "clube atletico mineiro",
+   "atletico-mg"
+  ],
+  "dicas": [
+   "Foi fundado em 1908.",
+   "Mascote: galo; o apelido do time é o nome desse animal.",
+   "Venceu a Libertadores em 2013, com Ronaldinho Gaúcho no elenco.",
+   "Time de camisa listrada em preto e branco.",
+   "Fica em Belo Horizonte."
+  ]
+ },
+ {
+  "id": "cruzeiro",
+  "tipo": "clube",
+  "resposta": "Cruzeiro",
+  "aceitas": [
+   "cruzeiro",
+   "cruzeiro esporte clube",
+   "raposa"
+  ],
+  "dicas": [
+   "Foi fundado em 1921, com o nome de Palestra Italia.",
+   "Venceu a Libertadores em 1976 e 1997.",
+   "Tem o apelido de \"Raposa\".",
+   "Time de camisa azul.",
+   "Fica em Belo Horizonte, rival do Atlético Mineiro."
+  ]
+ },
+ {
+  "id": "botafogo",
+  "tipo": "clube",
+  "resposta": "Botafogo",
+  "aceitas": [
+   "botafogo",
+   "botafogo de futebol e regatas",
+   "fogao"
+  ],
+  "dicas": [
+   "Foi fundado em 1904.",
+   "Tem uma estrela solitária no escudo.",
+   "Foi o clube de Garrincha, Nilton Santos e Jairzinho.",
+   "Time carioca de camisa preta e branca.",
+   "Apelido: \"Fogão\"."
+  ]
+ },
+ {
+  "id": "fluminense",
+  "tipo": "clube",
+  "resposta": "Fluminense",
+  "aceitas": [
+   "fluminense",
+   "fluminense fc",
+   "flu",
+   "tricolor carioca"
+  ],
+  "dicas": [
+   "Foi fundado em 1902.",
+   "Seu estádio histórico fica no bairro das Laranjeiras.",
+   "Faz o clássico \"Fla-Flu\" com o Flamengo.",
+   "Time carioca de camisa grená, branca e verde.",
+   "Venceu a Libertadores de 2023, no Maracanã."
+  ]
+ },
+ {
+  "id": "bahia",
+  "tipo": "clube",
+  "resposta": "Bahia",
+  "aceitas": [
+   "bahia",
+   "esporte clube bahia",
+   "tricolor de aco",
+   "tricolor baiano"
+  ],
+  "dicas": [
+   "Foi fundado em 1931.",
+   "Foi campeão da primeira Taça Brasil, em 1959.",
+   "Seu estádio é a Arena Fonte Nova.",
+   "Time de camisa azul, vermelha e branca, chamado de \"Tricolor de Aço\".",
+   "Fica em Salvador."
+  ]
+ },
+ {
+  "id": "vitoria",
+  "tipo": "clube",
+  "resposta": "Vitória",
+  "aceitas": [
+   "vitoria",
+   "esporte clube vitoria",
+   "leao da barra"
+  ],
+  "dicas": [
+   "Foi fundado em 1899.",
+   "Seu estádio é o Barradão.",
+   "Tem o apelido de \"Leão da Barra\".",
+   "Time de camisa rubro-negra.",
+   "Fica em Salvador, rival do Bahia."
+  ]
+ },
+ {
+  "id": "ceara",
+  "tipo": "clube",
+  "resposta": "Ceará",
+  "aceitas": [
+   "ceara",
+   "ceara sc",
+   "vozao"
+  ],
+  "dicas": [
+   "Foi fundado em 1914.",
+   "Tem o apelido de \"Vozão\".",
+   "Faz o Clássico-Rei com o Fortaleza.",
+   "Time de camisa alvinegra.",
+   "Fica na capital cearense."
+  ]
+ },
+ {
+  "id": "fortaleza",
+  "tipo": "clube",
+  "resposta": "Fortaleza",
+  "aceitas": [
+   "fortaleza",
+   "fortaleza ec",
+   "leao do pici"
+  ],
+  "dicas": [
+   "Foi fundado em 1918.",
+   "Tem o apelido de \"Leão do Pici\".",
+   "Faz o Clássico-Rei com o Ceará.",
+   "Time de camisa azul, vermelha e branca.",
+   "Fica na capital do estado do Ceará."
+  ]
+ },
+ {
+  "id": "sport",
+  "tipo": "clube",
+  "resposta": "Sport",
+  "aceitas": [
+   "sport",
+   "sport recife",
+   "sport club do recife",
+   "leao da ilha"
+  ],
+  "dicas": [
+   "Foi fundado em 1905.",
+   "Seu estádio é a Ilha do Retiro.",
+   "Foi campeão brasileiro em 1987, título reconhecido pela CBF.",
+   "Tem o apelido de \"Leão da Ilha\".",
+   "Time pernambucano de camisa rubro-negra, que fica em Recife."
+  ]
+ },
+ {
+  "id": "athletico-pr",
+  "tipo": "clube",
+  "resposta": "Athletico Paranaense",
+  "aceitas": [
+   "athletico paranaense",
+   "athletico pr",
+   "athletico",
+   "atletico paranaense",
+   "furacao"
+  ],
+  "dicas": [
+   "Foi fundado em 1924.",
+   "Foi campeão da Copa Sul-Americana em 2018.",
+   "Foi campeão da Copa do Brasil em 2019.",
+   "Tem o apelido de \"Furacão\".",
+   "Time de camisa rubro-negra de Curitiba."
+  ]
+ },
+ {
+  "id": "coritiba",
+  "tipo": "clube",
+  "resposta": "Coritiba",
+  "aceitas": [
+   "coritiba",
+   "coritiba fc",
+   "coxa"
+  ],
+  "dicas": [
+   "Foi fundado em 1909.",
+   "Seu estádio é o Couto Pereira.",
+   "Foi campeão brasileiro em 1985.",
+   "Tem o apelido de \"Coxa\".",
+   "Time de camisa verde e branca de Curitiba."
+  ]
+ },
+ {
+  "id": "goias",
+  "tipo": "clube",
+  "resposta": "Goiás",
+  "aceitas": [
+   "goias",
+   "goias ec",
+   "esmeraldino"
+  ],
+  "dicas": [
+   "Foi fundado em 1943.",
+   "Seu estádio é a Serrinha.",
+   "Time de camisa verde.",
+   "Tem o apelido de \"Esmeraldino\".",
+   "Fica em Goiânia, rival do Vila Nova e do Atlético Goianiense."
+  ]
+ },
+ {
+  "id": "atletico-go",
+  "tipo": "clube",
+  "resposta": "Atlético Goianiense",
+  "aceitas": [
+   "atletico goianiense",
+   "atletico go",
+   "dragao",
+   "atletico-go"
+  ],
+  "dicas": [
+   "Foi fundado em 1937.",
+   "Seu estádio é o Antônio Accioly.",
+   "Tem o apelido de \"Dragão\".",
+   "Time de camisa rubro-negra.",
+   "Fica em Goiânia."
+  ]
+ },
+ {
+  "id": "vila-nova",
+  "tipo": "clube",
+  "resposta": "Vila Nova",
+  "aceitas": [
+   "vila nova",
+   "vila nova fc",
+   "tigre"
+  ],
+  "dicas": [
+   "Foi fundado em 1943.",
+   "Seu estádio é o Onésio Brasileiro Alvarenga, o OBA.",
+   "Tem o apelido de \"Tigre\".",
+   "Time de camisa vermelha e branca.",
+   "Fica em Goiânia, rival do Goiás."
+  ]
+ },
+ {
+  "id": "bragantino",
+  "tipo": "clube",
+  "resposta": "Red Bull Bragantino",
+  "aceitas": [
+   "red bull bragantino",
+   "bragantino",
+   "massa bruta",
+   "rb bragantino"
+  ],
+  "dicas": [
+   "Foi fundado em 1928.",
+   "Seu estádio é o Nabi Abi Chedid.",
+   "Tem o apelido de \"Massa Bruta\".",
+   "Foi comprado por uma marca de energéticos e teve o nome alterado.",
+   "Fica em Bragança Paulista, no interior de São Paulo."
+  ]
+ },
+ {
+  "id": "juventude",
+  "tipo": "clube",
+  "resposta": "Juventude",
+  "aceitas": [
+   "juventude",
+   "ec juventude",
+   "papo"
+  ],
+  "dicas": [
+   "Foi fundado em 1913.",
+   "Foi campeão da Copa do Brasil em 1999.",
+   "Tem o apelido de \"Papo\".",
+   "Time de camisa verde e branca.",
+   "Fica em Caxias do Sul, no Rio Grande do Sul."
+  ]
+ },
+ {
+  "id": "chapecoense",
+  "tipo": "clube",
+  "resposta": "Chapecoense",
+  "aceitas": [
+   "chapecoense",
+   "chape",
+   "associacao chapecoense de futebol"
+  ],
+  "dicas": [
+   "Foi fundado em 1973.",
+   "Fica em Chapecó, em Santa Catarina.",
+   "Foi campeão da Copa Sul-Americana de 2016, de forma póstuma.",
+   "Sofreu um acidente de avião em 2016, a caminho da final, na Colômbia.",
+   "Time de camisa verde, apelidado de \"Chape\"."
+  ]
+ },
+ {
+  "id": "atletico-madrid",
+  "tipo": "clube",
+  "resposta": "Atlético de Madrid",
+  "aceitas": [
+   "atletico de madrid",
+   "atletico madrid",
+   "atletico de madri",
+   "colchoneros"
+  ],
+  "dicas": [
+   "Foi fundado em 1903.",
+   "Seu estádio é o Metropolitano.",
+   "Tem o apelido de \"Colchoneros\".",
+   "É dirigido por Diego Simeone desde 2011.",
+   "Time espanhol de camisa listrada em vermelho e branco, rival do Real Madrid."
+  ]
+ },
+ {
+  "id": "milan",
+  "tipo": "clube",
+  "resposta": "Milan",
+  "aceitas": [
+   "milan",
+   "ac milan",
+   "rossoneri"
+  ],
+  "dicas": [
+   "Foi fundado em 1899.",
+   "Divide o estádio San Siro com o rival da mesma cidade.",
+   "Tem o apelido de \"Rossoneri\".",
+   "Paolo Maldini passou toda a carreira nesse clube.",
+   "Time italiano de camisa listrada em vermelho e preto."
+  ]
+ },
+ {
+  "id": "inter-de-milao",
+  "tipo": "clube",
+  "resposta": "Inter de Milão",
+  "aceitas": [
+   "inter de milao",
+   "internazionale",
+   "inter milan",
+   "inter de milan",
+   "nerazzurri"
+  ],
+  "dicas": [
+   "Foi fundado em 1908.",
+   "Divide o estádio San Siro com o rival da mesma cidade.",
+   "Tem o apelido de \"Nerazzurri\".",
+   "Ronaldo Fenômeno jogou nesse clube.",
+   "Time italiano de camisa listrada em azul e preto."
+  ]
+ },
+ {
+  "id": "roma",
+  "tipo": "clube",
+  "resposta": "Roma",
+  "aceitas": [
+   "roma",
+   "as roma",
+   "giallorossi"
+  ],
+  "dicas": [
+   "Foi fundado em 1927.",
+   "Seu estádio é o Olímpico.",
+   "Tem a loba no escudo, símbolo da cidade.",
+   "Francesco Totti passou a carreira inteira nesse clube.",
+   "Time italiano de camisa grená e amarela, da capital."
+  ]
+ },
+ {
+  "id": "napoli",
+  "tipo": "clube",
+  "resposta": "Napoli",
+  "aceitas": [
+   "napoli",
+   "ssc napoli",
+   "napoles"
+  ],
+  "dicas": [
+   "Foi fundado em 1926.",
+   "Fica ao sul da Itália, perto do Vesúvio.",
+   "Seu estádio leva o nome de um de seus maiores ídolos.",
+   "Maradona foi o astro desse clube.",
+   "Time italiano de camisa azul-celeste."
+  ]
+ },
+ {
+  "id": "psg",
+  "tipo": "clube",
+  "resposta": "Paris Saint-Germain",
+  "aceitas": [
+   "paris saint-germain",
+   "paris saint germain",
+   "psg",
+   "paris sg"
+  ],
+  "dicas": [
+   "Foi fundado em 1970.",
+   "Seu estádio é o Parc des Princes.",
+   "Tem a Torre Eiffel no escudo.",
+   "Neymar, Messi e Mbappé jogaram nesse clube.",
+   "Time francês da capital, de camisa azul-marinho com faixa vermelha."
+  ]
+ },
+ {
+  "id": "arsenal",
+  "tipo": "clube",
+  "resposta": "Arsenal",
+  "aceitas": [
+   "arsenal",
+   "arsenal fc",
+   "gunners"
+  ],
+  "dicas": [
+   "Foi fundado em 1886, por operários de uma fábrica de armas.",
+   "Seu estádio é o Emirates.",
+   "Tem o apelido de \"Gunners\".",
+   "Foi campeão inglês sem perder nenhum jogo em 2003/04, o time dos \"Invincibles\".",
+   "Time de Londres de camisa vermelha com mangas brancas, onde Henry virou ídolo."
+  ]
+ },
+ {
+  "id": "chelsea",
+  "tipo": "clube",
+  "resposta": "Chelsea",
+  "aceitas": [
+   "chelsea",
+   "chelsea fc"
+  ],
+  "dicas": [
+   "Foi fundado em 1905.",
+   "Seu estádio é o Stamford Bridge.",
+   "Fica em Londres.",
+   "Time inglês de camisa azul.",
+   "Tem o leão no escudo."
+  ]
+ },
+ {
+  "id": "manchester-city",
+  "tipo": "clube",
+  "resposta": "Manchester City",
+  "aceitas": [
+   "manchester city",
+   "man city",
+   "city"
+  ],
+  "dicas": [
+   "Foi fundado em 1880, com o nome de St. Mark's.",
+   "Seu estádio é o Etihad.",
+   "Pep Guardiola foi técnico do time a partir de 2016.",
+   "Joga em Manchester, rival do Manchester United.",
+   "Time inglês de camisa azul-celeste."
+  ]
+ },
+ {
+  "id": "tottenham",
+  "tipo": "clube",
+  "resposta": "Tottenham",
+  "aceitas": [
+   "tottenham",
+   "tottenham hotspur",
+   "spurs"
+  ],
+  "dicas": [
+   "Foi fundado em 1882.",
+   "Tem o apelido de \"Spurs\".",
+   "Tem um galo no escudo.",
+   "Fica em Londres.",
+   "Time inglês de camisa branca."
+  ]
+ },
+ {
+  "id": "borussia-dortmund",
+  "tipo": "clube",
+  "resposta": "Borussia Dortmund",
+  "aceitas": [
+   "borussia dortmund",
+   "dortmund",
+   "bvb"
+  ],
+  "dicas": [
+   "Foi fundado em 1909.",
+   "Seu estádio é o Signal Iduna Park.",
+   "A arquibancada de trás de um dos gols é a famosa \"Muralha Amarela\".",
+   "Time alemão, rival do Bayern de Munique.",
+   "Time de camisa amarela e preta."
+  ]
+ },
+ {
+  "id": "ajax",
+  "tipo": "clube",
+  "resposta": "Ajax",
+  "aceitas": [
+   "ajax",
+   "ajax amsterdam",
+   "ajax de amsterda"
+  ],
+  "dicas": [
+   "Foi fundado em 1900.",
+   "Seu estádio é a Johan Cruijff Arena.",
+   "Foi o clube de Johan Cruyff.",
+   "Time holandês de camisa branca com faixa vermelha.",
+   "Fica em Amsterdã."
+  ]
+ },
+ {
+  "id": "benfica",
+  "tipo": "clube",
+  "resposta": "Benfica",
+  "aceitas": [
+   "benfica",
+   "sl benfica",
+   "aguias"
+  ],
+  "dicas": [
+   "Foi fundado em 1904.",
+   "Seu estádio é o Estádio da Luz.",
+   "Tem uma águia no escudo.",
+   "Time português de camisa vermelha.",
+   "Fica em Lisboa."
+  ]
+ },
+ {
+  "id": "porto",
+  "tipo": "clube",
+  "resposta": "Porto",
+  "aceitas": [
+   "porto",
+   "fc porto",
+   "dragoes"
+  ],
+  "dicas": [
+   "Foi fundado em 1893.",
+   "Seu estádio é o Estádio do Dragão.",
+   "Tem o apelido de \"Dragões\".",
+   "Time português de camisa azul e branca.",
+   "Fica no norte de Portugal, na margem do rio Douro."
+  ]
+ },
+ {
+  "id": "sporting",
+  "tipo": "clube",
+  "resposta": "Sporting",
+  "aceitas": [
+   "sporting",
+   "sporting cp",
+   "sporting de lisboa",
+   "sporting clube de portugal",
+   "leoes"
+  ],
+  "dicas": [
+   "Foi fundado em 1906.",
+   "Seu estádio é o José Alvalade.",
+   "Cristiano Ronaldo foi revelado por esse clube.",
+   "Tem o apelido de \"Leões\".",
+   "Time português de camisa verde e branca, de Lisboa."
+  ]
+ },
+ {
+  "id": "river-plate",
+  "tipo": "clube",
+  "resposta": "River Plate",
+  "aceitas": [
+   "river plate",
+   "river"
+  ],
+  "dicas": [
+   "Foi fundado em 1901.",
+   "Seu estádio é o Monumental de Núñez.",
+   "Di Stéfano jogou nesse clube.",
+   "Disputa o Superclásico contra o Boca Juniors.",
+   "Time argentino de camisa branca com faixa vermelha."
+  ]
+ },
+ {
+  "id": "penarol",
+  "tipo": "clube",
+  "resposta": "Peñarol",
+  "aceitas": [
+   "penarol",
+   "club atletico penarol",
+   "carboneros"
+  ],
+  "dicas": [
+   "Segundo o clube, foi fundado em 1891, com o nome de Central Uruguay Railway Cricket Club.",
+   "Tem o apelido de \"Carboneros\".",
+   "Faz o clássico com o Nacional.",
+   "Time uruguaio de camisa amarela e preta.",
+   "Fica em Montevidéu."
+  ]
+ },
+ {
+  "id": "celtic",
+  "tipo": "clube",
+  "resposta": "Celtic",
+  "aceitas": [
+   "celtic",
+   "celtic fc",
+   "celtic glasgow"
+  ],
+  "dicas": [
+   "Foi fundado em 1887.",
+   "Seu estádio fica no bairro de Parkhead.",
+   "Disputa o clássico \"Old Firm\" contra o Rangers.",
+   "Time escocês de camisa listrada horizontalmente em verde e branco.",
+   "Fica em Glasgow."
+  ]
+ }
 ]
