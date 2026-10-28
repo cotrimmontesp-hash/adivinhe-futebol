@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { sortearRodada } from './sortear.ts';
 
@@ -55,6 +56,22 @@ test('equilibra o quanto der quando um tipo tem menos itens', () => {
   assert.equal(new Set(sorteados.map((item) => item.id)).size, 10);
   assert.equal(sorteados.filter((item) => item.tipo === 'jogador').length, 2);
   assert.equal(sorteados.filter((item) => item.tipo === 'clube').length, 8);
+});
+
+test('a rodada de cada nível só traz 10 itens daquele nível, sem repetir', () => {
+  const bruto: unknown = JSON.parse(readFileSync(new URL('../data/dados.json', import.meta.url), 'utf8'));
+  assert.ok(Array.isArray(bruto));
+  const itens = bruto as { id: string; tipo: string; nivel: string }[];
+  for (const nivel of ['facil', 'medio', 'dificil']) {
+    const pool = itens.filter((item) => item.nivel === nivel);
+    for (let rodada = 0; rodada < 8; rodada += 1) {
+      const sorteados = sortearRodada(pool, 10, semente(rodada + 1));
+      assert.equal(sorteados.length, 10);
+      assert.equal(new Set(sorteados.map((item) => item.id)).size, 10);
+      assert.ok(sorteados.every((item) => item.nivel === nivel));
+      assert.equal(sorteados.filter((item) => item.tipo === 'jogador').length, 5);
+    }
+  }
 });
 
 test('recusa rodada maior que o banco', () => {

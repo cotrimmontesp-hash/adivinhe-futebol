@@ -1,8 +1,12 @@
 import dadosJson from './data/dados.json';
-import type { ItemQuiz, TipoPergunta } from './tipos';
+import type { ItemQuiz, Nivel, TipoPergunta } from './tipos';
 
 function ehTipo(valor: unknown): valor is TipoPergunta {
   return valor === 'jogador' || valor === 'clube';
+}
+
+function ehNivel(valor: unknown): valor is Nivel {
+  return valor === 'facil' || valor === 'medio' || valor === 'dificil';
 }
 
 function ehItem(valor: unknown): valor is ItemQuiz {
@@ -14,6 +18,7 @@ function ehItem(valor: unknown): valor is ItemQuiz {
     typeof item.id === 'string' &&
     item.id.length > 0 &&
     ehTipo(item.tipo) &&
+    ehNivel(item.nivel) &&
     typeof item.resposta === 'string' &&
     item.resposta.length > 0 &&
     Array.isArray(item.aceitas) &&

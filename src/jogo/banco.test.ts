@@ -6,6 +6,7 @@ import { normalizarResposta } from './resposta.ts';
 type ItemBanco = {
   id: string;
   tipo: string;
+  nivel: string;
   resposta: string;
   aceitas: string[];
   dicas: string[];
@@ -58,6 +59,22 @@ test('nenhuma resposta aceita, já normalizada, se repete em outro item', () => 
       assert.equal(outro, undefined, `"${forma}" em ${item.id} e ${outro ?? ''}`);
       vistas.set(forma, item.id);
     }
+  }
+});
+
+test('cada item tem nivel válido, nas contagens 30, 42 e 28', () => {
+  const itens = carregarBanco();
+  const niveis = ['facil', 'medio', 'dificil'] as const;
+  for (const item of itens) {
+    assert.ok(niveis.includes(item.nivel as (typeof niveis)[number]), item.id);
+  }
+  assert.equal(itens.filter((item) => item.nivel === 'facil').length, 30);
+  assert.equal(itens.filter((item) => item.nivel === 'medio').length, 42);
+  assert.equal(itens.filter((item) => item.nivel === 'dificil').length, 28);
+  for (const nivel of niveis) {
+    const doNivel = itens.filter((item) => item.nivel === nivel);
+    assert.ok(doNivel.filter((item) => item.tipo === 'jogador').length >= 5, nivel);
+    assert.ok(doNivel.filter((item) => item.tipo === 'clube').length >= 5, nivel);
   }
 });
 

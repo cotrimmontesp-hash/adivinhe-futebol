@@ -18,12 +18,22 @@ import { normalizarResposta, respostaConfere } from '../jogo/resposta';
 import { TAMANHO_RODADA, sortearRodada } from '../jogo/sortear';
 import { lerRecorde, salvarRecorde } from '../recorde';
 import { CORES, textoBase } from '../tema';
-import type { ItemQuiz } from '../tipos';
+import type { ItemQuiz, Nivel } from '../tipos';
 
-type Fase = 'jogando' | 'revelada' | 'fim';
+type Fase = 'escolha' | 'jogando' | 'revelada' | 'fim';
+
+const ROTULO_NIVEL: Record<Nivel, string> = {
+  facil: 'Fácil',
+  medio: 'Médio',
+  dificil: 'Difícil',
+};
 
 function rotuloTipo(tipo: ItemQuiz['tipo']): string {
   return tipo === 'jogador' ? 'Jogador' : 'Clube';
+}
+
+function rotuloNivel(nivel: Nivel): string {
+  return ROTULO_NIVEL[nivel];
 }
 
 function textoPontos(pontos: number): string {
@@ -33,9 +43,8 @@ function textoPontos(pontos: number): string {
 export function Jogo() {
   const insets = useSafeAreaInsets();
   const rolagem = useRef<ScrollViewInstance>(null);
-  const [rodada, setRodada] = useState<ItemQuiz[]>(() =>
-    itens.length >= TAMANHO_RODADA ? sortearRodada(itens, TAMANHO_RODADA) : [],
-  );
+  const [nivel, setNivel] = useState<Nivel | null>(null);
+  const [rodada, setRodada] = useState<ItemQuiz[]>([]);
   const [indice, setIndice] = useState(0);
   const [dicasVisiveis, setDicasVisiveis] = useState(1);
   const [pontos, setPontos] = useState(0);
@@ -43,9 +52,9 @@ export function Jogo() {
   const [respostaDigitada, setRespostaDigitada] = useState('');
   const [aviso, setAviso] = useState<string | null>(null);
   const [ganhos, setGanhos] = useState(0);
-  const [fase, setFase] = useState<Fase>('jogando');
+  const [fase, setFase] = useState<Fase>('escolha');
   const [novoRecorde, setNovoRecorde] = useState(false);
-  const faseRef = useRef<Fase>('jogando');
+  const faseRef = useRef<Fase>('escolha');
   const dicasRef = useRef(1);
 
   function mudarFase(nova: Fase) {
@@ -138,11 +147,7 @@ export function Jogo() {
     mudarFase('jogando');
   }
 
-  function jogarDeNovo() {
-    if (itens.length < TAMANHO_RODADA) {
-      return;
-    }
-    setRodada(sortearRodada(itens, TAMANHO_RODADA));
+  function reiniciarPergunta() {
     setIndice(0);
     dicasRef.current = 1;
     setDicasVisiveis(1);
@@ -151,10 +156,74 @@ export function Jogo() {
     setAviso(null);
     setGanhos(0);
     setNovoRecorde(false);
+  }
+
+  function comecar(escolhido: Nivel) {
+    const pool = itens.filter((item) => item.nivel === escolhido);
+    if (pool.length < TAMANHO_RODADA) {
+      return;
+    }
+    setNivel(escolhido);
+    setRodada(sortearRodada(pool, TAMANHO_RODADA));
+    reiniciarPergunta();
     mudarFase('jogando');
   }
 
-  if (itens.length < TAMANHO_RODADA || pergunta === undefined) {
+  function jogarDeNovo() {
+    setRodada([]);
+    setNivel(null);
+    reiniciarPergunta();
+    mudarFase('escolha');
+  }
+
+  if (fase === 'escolha') {
+    return (
+      <View style={estilos.tela}>
+        <View style={[estilos.cabecalho, { paddingTop: insets.top + 12 }]}>
+          <View style={estilos.cabecalhoMiolo}>
+            <Text accessibilityRole="header" style={estilos.titulo}>
+              Adivinhe Futebol
+            </Text>
+            <Text style={estilos.placarTexto}>Escolha o nível</Text>
+          </View>
+        </View>
+        <ScrollView
+          style={estilos.rolagem}
+          contentContainerStyle={[estilos.conteudo, { paddingBottom: insets.bottom + 28 }]}
+        >
+          <View style={estilos.bloco} testID="tela-escolha">
+            <Text style={estilos.escolhaTexto}>
+              O nível é o quanto o nome é conhecido. A pontuação não muda.
+            </Text>
+            <Botao
+              rotulo="Fácil"
+              onPress={() => comecar('facil')}
+              variante="secundario"
+              testID="botao-nivel-facil"
+            />
+            <View style={estilos.sugeridoBloco}>
+              <Text style={estilos.sugerido}>Sugerido</Text>
+              <Botao
+                rotulo="Médio"
+                onPress={() => comecar('medio')}
+                variante="primario"
+                testID="botao-nivel-medio"
+                rotuloAcessivel="Médio, sugerido"
+              />
+            </View>
+            <Botao
+              rotulo="Difícil"
+              onPress={() => comecar('dificil')}
+              variante="secundario"
+              testID="botao-nivel-dificil"
+            />
+          </View>
+        </ScrollView>
+      </View>
+    );
+  }
+
+  if (nivel === null || itens.length < TAMANHO_RODADA || pergunta === undefined) {
     return (
       <View style={[estilos.tela, { paddingTop: insets.top }]}>
         <Text style={estilos.titulo}>Adivinhe Futebol</Text>
@@ -174,6 +243,9 @@ export function Jogo() {
         <View style={estilos.cabecalhoMiolo}>
           <Text accessibilityRole="header" style={estilos.titulo}>
             Adivinhe Futebol
+          </Text>
+          <Text style={estilos.nivelTexto} testID="nivel-partida">
+            Nível {rotuloNivel(nivel)}
           </Text>
           {fase === 'fim' ? (
             <Text style={estilos.placarTexto}>Rodada encerrada</Text>
@@ -286,6 +358,7 @@ function Botao(props: {
   onPress: () => void;
   variante: 'primario' | 'secundario' | 'discreto';
   testID: string;
+  rotuloAcessivel?: string;
 }) {
   const estilo =
     props.variante === 'primario'
@@ -302,7 +375,7 @@ function Botao(props: {
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={props.rotulo}
+      accessibilityLabel={props.rotuloAcessivel ?? props.rotulo}
       onPress={props.onPress}
       testID={props.testID}
       style={({ pressed }) => [estilo, pressed ? estilos.botaoPressionado : null]}
@@ -350,6 +423,26 @@ const estilos = StyleSheet.create({
     ...textoBase,
     color: '#e7f5ec',
     fontSize: 16,
+  },
+  nivelTexto: {
+    ...textoBase,
+    color: '#e7f5ec',
+    fontSize: 15,
+    fontWeight: '600',
+  },
+  escolhaTexto: {
+    ...textoBase,
+    fontSize: 18,
+    lineHeight: 26,
+  },
+  sugeridoBloco: {
+    gap: 6,
+  },
+  sugerido: {
+    ...textoBase,
+    color: CORES.verdeEscuro,
+    fontSize: 14,
+    fontWeight: '700',
   },
   rolagem: {
     flex: 1,
